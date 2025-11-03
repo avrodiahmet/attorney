@@ -2,8 +2,8 @@ backend:
   name: github
   repo: yunusemrebilik/astro-test
   branch: main
-  site_domain: astro-test-jade-omega.vercel.app
-  base_url: https://astro-test-jade-omega.vercel.app
+  site_domain: attorney-two.vercel.app
+  base_url: https://attorney-two.vercel.app
   auth_endpoint: oauth
 
 media_folder: "src/assets/uploads"
