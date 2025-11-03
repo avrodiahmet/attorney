@@ -9,7 +9,6 @@ const { title, description, imageUrl } = Astro.props;
 <!doctype html>
 <html lang="tr">
   <head>
-		<BaseHead title={title} description={description} />
     <style>
       body {
         margin: 0;
@@ -45,13 +44,14 @@ const { title, description, imageUrl } = Astro.props;
         margin-top: 20px;
       }
     </style>
+		<BaseHead title={title} description={description} />
   </head>
   <body>
     <Header />
     
-    <div>
+    {imageUrl && <div>
       <img src={imageUrl} alt="" />
-    </div>
+    </div>}
 
     <main>
       <h1>{title}</h1>
