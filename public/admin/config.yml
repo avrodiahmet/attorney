@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: yunusemrebilik/astro-test
+  branch: main
+  site_domain: astro-test-jade-omega.vercel.app
+  base_url: https://astro-test-jade-omega.vercel.app
+  auth_endpoint: oauth
+
+media_folder: "src/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "pubDate", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Hero Image", name: "heroImage", widget: "image", optional: true }
+      - { label: "Body", name: "body", widget: "markdown" }
