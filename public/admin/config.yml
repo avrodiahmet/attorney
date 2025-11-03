@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: yunusemrebilik/attorney
+  repo: avrodiahmet/attorney
   branch: main
-  site_domain: attorney-two.vercel.app
-  base_url: https://attorney-two.vercel.app
+  site_domain: attorney-rho.vercel.app
+  base_url: https://attorney-rho.vercel.app
   auth_endpoint: oauth
 
 media_folder: "public/uploads"
