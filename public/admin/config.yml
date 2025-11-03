@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: yunusemrebilik/astro-test
+  repo: yunusemrebilik/attorney
   branch: main
   site_domain: attorney-two.vercel.app
   base_url: https://attorney-two.vercel.app
