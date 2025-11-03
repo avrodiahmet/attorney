@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
@@ -24,6 +23,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				width: 100%;
 			}
 			.hero-image img {
+				max-width: 600px;
 				display: block;
 				margin: 0 auto;
 				border-radius: 12px;
