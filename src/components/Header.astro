@@ -7,8 +7,8 @@ import HeaderLink from './HeaderLink.astro';
 		<h2><a href="/"><img src="/uploads/logo.jpeg" alt="site logo" /></a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Ana Sayfa</HeaderLink>
-			<HeaderLink href="/about">Hakkımızda</HeaderLink>
-			<HeaderLink href="/contact">İletişim</HeaderLink>
+			<HeaderLink href="/hakkimizda">Hakkımızda</HeaderLink>
+			<HeaderLink href="/iletisim">İletişim</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
 		</div>
 	</nav>
@@ -48,7 +48,26 @@ import HeaderLink from './HeaderLink.astro';
 		text-decoration: none;
 		border-bottom-color: var(--accent);
 	}
-	@media (max-width: 720px) {
-		
+	@media (max-width: 480px) {
+		nav {
+			flex-direction: column;
+			align-items: center;
+		}
+		.internal-links {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+		nav a {
+			text-align: center;
+			width: 100%;
+			padding: 0.25em;
+			border: none;
+		}
+		nav a.active {
+			color: white;
+			text-decoration: none;
+			background-color: var(--accent);
+		}
 	}
 </style>
