@@ -62,6 +62,7 @@ let links = [
   }
 
   nav a {
+    padding: 4px 0;
     color: #222;
     text-decoration: none;
     font-weight: 500;
@@ -106,11 +107,13 @@ let links = [
   }
 
   @media (max-width: 768px) {
-		.logo img {
-			height: 3em;
-		}
+    .logo img {
+      height: 3em;
+    }
+
     .menu-toggle {
       display: flex;
+      z-index: 110; /* make sure it's above the links */
     }
 
     .links {
@@ -123,19 +126,20 @@ let links = [
       align-items: center;
       gap: 0.75em;
       padding: 1em 0;
-      transform: translateY(-100%);
+      transform: scaleY(0);
+      transform-origin: top;
       opacity: 0;
       pointer-events: none;
-      transition: all 0.3s ease;
+      transition: all 0.25s ease;
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     }
 
     .links.open {
-      transform: translateY(0);
+      transform: scaleY(1);
       opacity: 1;
       pointer-events: all;
     }
-    
+
     nav a {
       text-align: center;
       width: 80%;
